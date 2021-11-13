@@ -26,5 +26,5 @@ app.post("/posts/:id/comments", (req, res) => {
 }); 
 
 app.listen(4001, () => {
-  console.log(`app is listning on port 4001`);
+  console.log(`app is listing on port 4001 comments`);
 });

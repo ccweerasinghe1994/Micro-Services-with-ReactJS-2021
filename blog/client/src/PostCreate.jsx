@@ -17,7 +17,7 @@ return <div>
             <label htmlFor="">Title</label>
             <input value={title} onChange={e=>setTitle(e.target.value)} type="text" className="form-control" />
         </div>
-        <button className="btn btn-primary">Submit</button>
+        <button className="btn btn-primary mt-3">Submit</button>
     </form>
 </div>
 }
