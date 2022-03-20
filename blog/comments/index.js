@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const { randomBytes } = require("crypto");
 const cors = require("cors");
-
+const { server } = require("./util");
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -26,5 +26,5 @@ app.post("/posts/:id/comments", (req, res) => {
 });
 
 app.listen(4001, () => {
-  console.log(`app is listing on port 4001 comments`);
+  console.log(server(`COMMENT SERVICE on port 4001`));
 });

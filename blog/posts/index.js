@@ -1,6 +1,7 @@
 const express = require("express");
 const { randomBytes } = require("crypto");
 const bodyParser = require("body-parser");
+const { error, warning, server } = require("./util");
 const cors = require("cors");
 const app = express();
 app.use(bodyParser.json());
@@ -25,5 +26,5 @@ app.post("/posts", (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log("listing on port 4000 posts");
+  console.log(server("POST SERVICE on port 4000"));
 });
